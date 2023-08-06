@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Signup"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="560dp"
+        android:layout_height="320dp"
+        android:src="@drawable/signupvector"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:paddingStart="2dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/username"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter Username"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                />
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/mail"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter Email"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:inputType="textEmailAddress"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phoneNo"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter phone number"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Password"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="password"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm password:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/confirmPass"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter password again"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/custom_formbutton"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginStart="35dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Login here."
+        android:layout_toRightOf="@+id/t1"
+        android:layout_below="@+id/cardview"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal"
+        android:textColor="#EA85D1"
+        android:textSize="18sp"/>
+        />
+
+</RelativeLayout>

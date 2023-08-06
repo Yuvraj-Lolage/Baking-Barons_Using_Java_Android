@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item
+        android:id="@+id/Login"
+        android:title="Log in"
+        android:icon="@drawable/ic_baseline_settings_24"
+        />
+    <item
+        android:id="@+id/Signup"
+        android:title="Sign up"
+        android:icon="@drawable/ic_baseline_settings_24"
+        />
+    <item
+        android:id="@+id/addCake"
+        android:title="Add Cake"
+        android:icon="@drawable/ic_baseline_settings_24"
+        />
+    <item
+        android:id="@+id/birthdayCake"
+        android:title="Birthday Cakes"
+        />
+
+</menu>

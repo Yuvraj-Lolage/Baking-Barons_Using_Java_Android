@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "873804391334",
+    "firebase_url": "https://bakingbarons-a3585-default-rtdb.firebaseio.com",
+    "project_id": "bakingbarons-a3585",
+    "storage_bucket": "bakingbarons-a3585.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873804391334:android:069ad5a150bd1565e8a567",
+        "android_client_info": {
+          "package_name": "com.example.bakingbarons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873804391334-ddhek1cv1lj727n9443m1fragmrq91n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx4OpzBQnd4MOlGTTXm40jfO8zC7uoGwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873804391334-ddhek1cv1lj727n9443m1fragmrq91n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

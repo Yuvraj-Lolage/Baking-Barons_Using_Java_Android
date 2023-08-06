@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <!--Header Section-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/navigation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:src="@drawable/menusvg"
+            android:elevation="10dp"
+            android:layout_marginRight="20dp"
+
+
+            />
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="0dp"/>
+        <ImageButton
+            android:id="@+id/notificationBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:src="@drawable/notificationsvg"
+            android:elevation="10dp"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <!--    Scroll view Starting-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--            Vertical scroll view-->
+            <!--Search Bar-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/locationbtn"
+                    android:layout_width="360dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/custom_button"
+                    android:elevation="10dp"
+                    android:text="Select Delivery Location"
+                    android:textAllCaps="false"
+                    android:textColor="#9C124948"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:paddingStart="40dp"
+                    android:paddingRight="40dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <!--Horizontal Flavours scrollview-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="6dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:scrollbarSize="0dp">
+                <!--Flavours scrollbar-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Chocolate"
+                        android:background="@drawable/custom_activebutton"
+                        android:textColor="#fff"
+                        android:elevation="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textAllCaps="false"
+                        />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Vanilla"
+                        android:background="@drawable/custom_button"
+                        android:elevation="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Strawberry"
+                        android:background="@drawable/custom_button"
+                        android:elevation="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Blueberry"
+                        android:background="@drawable/custom_button"
+                        android:elevation="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Cheesecake"
+                        android:background="@drawable/custom_button"
+                        android:elevation="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Red Velvet"
+                        android:background="@drawable/custom_button"
+                        android:elevation="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!--    Popular Label-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popular"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"/>
+            <!--    Horizontal Card View-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="0dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="208dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <!--            Card 1-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="185dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginStart="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:src="@drawable/cardimg"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choco Cupcake"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.5★"
+                                    android:gravity="left"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="₹500"
+                                    android:gravity="right"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!--            Card 2-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="185dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginLeft="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:src="@drawable/cardimg"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choco Cupcake"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.5★"
+                                    android:gravity="left"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="₹500"
+                                    android:gravity="right"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!--            Card 3-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="185dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginLeft="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:src="@drawable/cardimg"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choco Cupcake"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.5★"
+                                    android:gravity="left"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="₹500"
+                                    android:gravity="right"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!--            Card 4-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="185dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:src="@drawable/cardimg"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choco Cupcake"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.5★"
+                                    android:gravity="left"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="₹500"
+                                    android:gravity="right"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!--    End of Card View-->
+
+            <!--    Text Label (Cake by price)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search cakes by occassion"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                />
+            <!--Horizontal ScrollView Search cake by occassion-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingEnd="10dp">
+                <!--            Card 1-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="195dp"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:src="@drawable/birthdaycake3"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="Birthday Cake"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="center_horizontal"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--                    Card -2-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="195dp"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="140dp"
+                            android:src="@drawable/weddingcake"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="Wedding Cake"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="center_horizontal"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--            Card 3-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="195dp"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:paddingLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="132dp"
+                            android:src="@drawable/themecake"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Theme
+                                Cake"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <!--            Customer Review-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:paddingEnd="10dp"
+                android:scrollbarSize="0dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:backgroundTint="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <!--customer 1-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="195dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingLeft="8dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="#D6D6D6">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="132dp"
+                                android:src="@drawable/themecake" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Theme Cake"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="195dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingLeft="8dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="#D6D6D6">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="132dp"
+                                android:src="@drawable/themecake" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Theme Cake"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="195dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingLeft="8dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="#D6D6D6">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="132dp"
+                                android:src="@drawable/themecake" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="ThemeCake"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+            <!--Ending of Scroll view -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    tools:context=".Header_lay"
+    android:orientation="vertical"
+    android:background="#F5A4B5"
+    android:gravity="bottom"
+    >
+
+    <ImageView
+        android:id="@+id/drawerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_vector"
+        android:paddingStart="20dp"
+        tools:ignore="RtlSymmetry"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/drawerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddCake"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD CAKE"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:paddingStart="2dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:paddingTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake name:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingStart="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cakeNameEditText"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter cake name"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:textSize="18sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake price:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingStart="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cakePriceEditText"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter cake price"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake flavour:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingStart="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cakeFlavourEditText"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter cake price"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake category:"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingStart="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/categoryEditText"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Enter cake category"
+                android:background="@drawable/cutom_form"
+                android:paddingStart="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+
+            <Button
+                android:id="@+id/addCakeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:layout_gravity="center_vertical"
+                android:padding="15dp"
+                android:background="@drawable/rounded_img"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:elevation="10dp"
+                />
+            <ImageView
+                android:id="@+id/cakeImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tooltipText="Select Image"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/select_image"
+                />
+            </LinearLayout>
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Cake"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_formbutton"
+                android:textAllCaps="false"
+                android:elevation="10dp"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
